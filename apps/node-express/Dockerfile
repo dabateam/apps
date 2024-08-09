@@ -1,8 +1,8 @@
 # Use the official Node.js 14 image as a parent image
-FROM node:14
+FROM node:20-alpine
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
