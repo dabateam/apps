@@ -22,9 +22,6 @@ services:
 
   db:
     image: mongo:latest
-    ports:
-      - "${DB_PORT}:27017"
-
     volumes:
       - db_volume:/data/db
 
